@@ -13,14 +13,20 @@ function App() {
       name: 'Jhon C.',
       salary: 800,
       increase: false,
+      like: false,
+      id:1
     }, {
       name: 'Alex M.',
-      salary: 3000,
-      increase: true,
+      salary: 1000,
+      increase: false,
+      like: false,
+      id:2
     }, {
       name: 'Carl W.',
       salary: 5000,
       increase: false,
+      like: false,
+      id:3
     },
   ];
 

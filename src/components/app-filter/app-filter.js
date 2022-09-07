@@ -8,14 +8,15 @@ const AppFilter = (props) => {
         {name: 'moreThen1000', label: 'З/П больше 1000$'},
     ];
 
-    const buttons = buttonsData.map(({name, label}) => {
+    const buttons = buttonsData.map(({name, label, colored}) => {
         const active = props.filter === name;
         const clazz = active ? 'btn-light' : 'btn-outline-light';
         return (
             <button type="button"
                     className={`btn ${clazz}`}
                     key={name}
-                    onClick={() => props.onFilterSelect(name)}>
+                    onClick={() => props.onFilterSelect(name)}
+                    >
                     {label}
             </button>)
     })
